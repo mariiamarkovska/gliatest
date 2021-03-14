@@ -50,6 +50,7 @@ p {
 
     return element.outerHTML;
   };
+});
 
   api.visitorApp.setChatMessageRenderer(function(message) {
     if (!message.metadata) {
@@ -60,7 +61,6 @@ p {
     customCard.innerHTML = createCustomCard(message.metadata);
 
     return customCard;
-  });
-})></script>
+  });></script>
 </body>
 </html>
