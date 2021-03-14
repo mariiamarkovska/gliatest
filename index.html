@@ -41,7 +41,7 @@ p {
 
 <script sm.getApi({version: 'v1'}).then(function(api) {
   const customCard = message => {
-    return `
+    return '
           <div
             class="custom-card"
             style="border: 1px solid black; padding: 10px;"
@@ -76,7 +76,7 @@ p {
               ${JSON.stringify(message, undefined, 2)}
             </textarea>
           </div>
-        `;
+        ';
   };
 
   const createCustomCard = function(metadata) {
