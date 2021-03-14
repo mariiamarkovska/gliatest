@@ -41,42 +41,7 @@ p {
 
 <script sm.getApi({version: 'v1'}).then(function(api) {
   const customCard = message => {
-    return '
-          <div
-            class="custom-card"
-            style="border: 1px solid black; padding: 10px;"
-          >
-            <h4
-              class="custom-card-title"
-              style="color: #1cce90;"
-              title="With colors"
-            >
-              Custom Card Image
-            </h4>
-            <br/>
-            <img
-              class="custom-card-image"
-              style="width: 200px;"
-              src="https://storage/example.gif"
-              alt="Some picture"
-              title="With a sample image"
-            />
-            <br/>
-            <br/>
-            <h4
-              class="custom-card-title"
-              style="color: #670405;"
-            >
-              Custom Card JSON message
-            </h4>
-            <textarea
-              class="custom-card-message-area"
-              style="border: none; color: #05505c; width: 190px; font-size: 10px; line-height: 1"
-            >
-              ${JSON.stringify(message, undefined, 2)}
-            </textarea>
-          </div>
-        ';
+    return 'test';
   };
 
   const createCustomCard = function(metadata) {
